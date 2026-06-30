@@ -7,11 +7,9 @@
     padding:0;
     box-sizing:border-box;
 }
-
 html{
     scroll-behavior:smooth;
 }
-
 body{
     font-family:Inter, Arial, Helvetica, sans-serif;
     background:#f8f8f8;
@@ -25,61 +23,43 @@ body{
 header{
     position:sticky;
     top:0;
-
     display:flex;
     justify-content:space-between;
     align-items:center;
-
     padding:20px 8%;
-
     background:white;
-
     box-shadow:0 2px 12px rgba(0,0,0,.06);
-
     z-index:100;
 }
-
 .logo h1{
     font-size:28px;
     font-weight:700;
 }
-
 nav ul{
     display:flex;
     list-style:none;
     gap:35px;
 }
-
 nav a{
     text-decoration:none;
     color:#333;
     font-weight:500;
     transition:.25s;
 }
-
 nav a:hover{
     color:#000;
 }
-
 .acciones{
     display:flex;
     gap:15px;
 }
-
 .acciones button{
-
     cursor:pointer;
-
     border:none;
-
     background:white;
-
     border:1px solid #ddd;
-
     padding:10px 18px;
-
     border-radius:10px;
-
     transition:.3s;
 }
 
@@ -98,42 +78,24 @@ nav a:hover{
 =========================== */
 
 .hero{
-
     height:420px;
-
     display:flex;
     align-items:center;
-
     padding:0 8%;
-
-    background:linear-gradient(
-        90deg,
-        #ffffff,
-        #ececec
-    );
-
+    background:linear-gradient(90deg,#ffffff,#ececec);
     margin-bottom:70px;
-
 }
 
 .hero h2{
-
     font-size:55px;
-
     width:650px;
-
     line-height:1.2;
-
     margin-bottom:20px;
-
 }
 
 .hero p{
-
     font-size:20px;
-
     color:#666;
-
 }
 
 /* ===========================
@@ -141,11 +103,8 @@ nav a:hover{
 =========================== */
 
 main{
-
     width:85%;
-
     margin:auto;
-
 }
 
 /* ===========================
@@ -153,42 +112,27 @@ main{
 =========================== */
 
 .filtros{
-
     display:flex;
-
     justify-content:space-between;
-
     gap:20px;
-
     margin-bottom:50px;
-
 }
 
 .filtros input,
 .filtros select{
-
     padding:14px;
-
     border:1px solid #ddd;
-
     border-radius:10px;
-
     font-size:16px;
-
     background:white;
-
 }
 
 .filtros input{
-
     flex:1;
-
 }
 
 .filtros select{
-
     width:260px;
-
 }
 
 /* ===========================
@@ -196,23 +140,15 @@ main{
 =========================== */
 
 #productos h2{
-
     margin-bottom:35px;
-
     font-size:34px;
-
 }
 
 .contenedor-productos{
-
     display:grid;
-
     grid-template-columns:repeat(auto-fill,minmax(270px,1fr));
-
     gap:35px;
-
     margin-bottom:80px;
-
 }
 
 /* ===========================
@@ -220,111 +156,66 @@ main{
 =========================== */
 
 .card{
-
     background:white;
-
     border-radius:18px;
-
     overflow:hidden;
-
     transition:.35s;
-
     box-shadow:0 6px 25px rgba(0,0,0,.05);
-
 }
 
 .card:hover{
-
     transform:translateY(-8px);
-
     box-shadow:0 15px 35px rgba(0,0,0,.10);
-
 }
 
 .card img{
-
     width:100%;
-
     height:260px;
-
     object-fit:contain;
-
     padding:30px;
-
     background:#fafafa;
-
 }
 
 .info{
-
     padding:25px;
-
 }
 
 .categoria{
-
     display:inline-block;
-
     background:#f0f0f0;
-
     color:#555;
-
     padding:5px 12px;
-
     border-radius:30px;
-
     font-size:13px;
-
     margin-bottom:15px;
-
 }
 
 .info h3{
-
     font-size:20px;
-
     margin-bottom:18px;
-
     height:55px;
-
 }
 
 .precio{
-
     font-size:24px;
-
     font-weight:bold;
-
     margin-bottom:20px;
-
 }
 
 .card button{
-
     width:100%;
-
     padding:15px;
-
     border:none;
-
     border-radius:10px;
-
     background:#111;
-
     color:white;
-
     cursor:pointer;
-
     transition:.3s;
-
     font-size:15px;
-
 }
 
 .card button:hover{
-
     background:#333;
-
 }
 
 /* ===========================
@@ -332,65 +223,38 @@ main{
 =========================== */
 
 #carrito{
-
     position:fixed;
-
     top:0;
-
     right:-420px;
-
     width:380px;
-
     height:100vh;
-
     background:white;
-
     box-shadow:-10px 0 30px rgba(0,0,0,.15);
-
     padding:25px;
-
     transition:.4s;
-
     display:flex;
-
     flex-direction:column;
-
 }
 
 .cabecera-carrito{
-
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
-
     margin-bottom:30px;
-
 }
 
 .productos-carrito{
-
     flex:1;
-
     overflow-y:auto;
-
 }
 
 .total{
-
     border-top:1px solid #ddd;
-
     padding-top:20px;
-
     display:flex;
-
     justify-content:space-between;
-
     font-size:22px;
-
     font-weight:bold;
-
 }
 
 /* ===========================
@@ -398,73 +262,44 @@ main{
 =========================== */
 
 #perfil{
-
     position:fixed;
-
     inset:0;
-
     display:none;
-
     justify-content:center;
-
     align-items:center;
-
     background:rgba(0,0,0,.45);
-
 }
 
 .perfil-contenido{
-
     width:420px;
-
     background:white;
-
     border-radius:18px;
-
     padding:40px;
-
     box-shadow:0 20px 40px rgba(0,0,0,.15);
-
 }
 
 .perfil-contenido h2{
-
     margin-bottom:25px;
-
 }
 
 .perfil-contenido p{
-
     margin-bottom:18px;
-
     color:#555;
-
 }
 
 .perfil-contenido button{
-
     margin-top:20px;
-
     width:100%;
-
     padding:14px;
-
     border:none;
-
     border-radius:10px;
-
     background:#111;
-
     color:white;
-
     cursor:pointer;
-
 }
 
 .perfil-contenido button:hover{
-
     background:#333;
-
 }
 
 /* ===========================
@@ -472,17 +307,11 @@ main{
 =========================== */
 
 footer{
-
     background:white;
-
     padding:30px;
-
     text-align:center;
-
     border-top:1px solid #e5e5e5;
-
     color:#777;
-
 }
 
 /* ===========================
@@ -490,73 +319,46 @@ footer{
 =========================== */
 
 @media(max-width:900px){
-
     header{
-
         flex-direction:column;
-
         gap:20px;
-
     }
 
     nav ul{
-
         flex-wrap:wrap;
-
         justify-content:center;
-
     }
 
     .hero{
 
         text-align:center;
-
         justify-content:center;
-
         height:300px;
-
     }
 
     .hero h2{
-
         width:auto;
-
         font-size:38px;
-
     }
 
     .filtros{
-
         flex-direction:column;
-
     }
 
     .filtros select{
-
         width:100%;
-
     }
 
     #carrito{
-
         width:100%;
-
     }
-
 }
 
 @media(max-width:600px){
-
     .hero h2{
-
         font-size:30px;
-
     }
-
     .contenedor-productos{
-
         grid-template-columns:1fr;
-
     }
-
 }

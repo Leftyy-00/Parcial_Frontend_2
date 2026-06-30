@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil | Minimal Store</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Minimal Store</h1>
+        <nav>
+            <a href="/PaginaPrincipal/index.html">
+                <button id="volverTienda">← Volver a la tienda</button>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="perfil">
+            <div class="foto">
+                <img src="img/user.png" alt="Foto de perfil">
+            </div>
+
+            <div class="informacion">
+                <h2>Mi Perfil</h2>
+
+                <div class="dato">
+                    <span>Nombre completo</span>
+                    <p id="nombre"></p>
+                </div>
+
+                <div class="dato">
+                    <span>Nombre de usuario</span>
+                    <p id="usuario"></p>
+                </div>
+
+                <div class="dato">
+                    <span>Correo electrónico</span>
+                    <p id="correo"></p>
+                </div>
+
+                <div class="dato">
+                    <span>Teléfono</span>
+                    <p id="telefono"></p>
+                </div>
+
+                <button id="cerrarSesion">Cerrar sesión</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Minimal Store. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="perfil.js"></script>
+</body>
+</html>
