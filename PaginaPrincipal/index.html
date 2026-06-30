@@ -1,26 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
-    <link rel="stylesheet" href="/css/style.css">
+    <title>Minimal Store</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <h1>Tienda Online</h1>
+        <div class="logo">
+            <h1>Minimal Store</h1>
+        </div>
         <nav>
-            <button id="perfilBtn">Mi Perfil</button>
-            <button id="cerrarSesion">Cerrar sesión</button>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#">Categorías</a></li>
+            </ul>
         </nav>
+
+        <div class="acciones">
+            <button id="btnPerfil">
+                Mi Perfil
+            </button>
+
+            <button id="btnCarrito">
+                🛒
+                <span id="cantidadCarrito">0</span>
+            </button>
+        </div>
     </header>
 
-    <main></main>
-        
-    <footer></footer>
+    <section class="hero">
+        <div class="hero-texto">
+            <h2>
+                Descubrí productos para tu día a día
+            </h2>
 
-    <script src="Principal.js"></script>
+            <p>
+                Tecnología, ropa, accesorios y mucho más.
+            </p>
+        </div>
+    </section>
+
+
+    <main>
+        <section class="filtros">
+            <input type="text" id="buscador" placeholder="Buscar productos...">
+
+            <select id="categorias">
+                <option value="">
+                    Todas las categorías                 
+                </option>
+            </select>
+        </section>
+
+        <section id="productos">
+            <h2>Productos</h2>
+
+            <div class="contenedor-productos">
+
+                <article class="card">
+                    <img src="https://placehold.co/300x300" alt="Producto">
+
+                    <div class="info">
+                        <span class="categoria">
+                            Electrónica
+                        </span>
+
+                        <h3>
+                            Nombre del producto
+                        </h3>
+
+                        <p class="precio">
+                            $109.99
+                        </p>
+
+                        <button>
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </article>
+
+
+                <article class="card">
+                    <img src="https://placehold.co/300x300" alt="Producto">
+
+                    <div class="info">
+                        <span class="categoria">
+                            Ropa
+                        </span>
+
+                        <h3>
+                            Nombre del producto
+                        </h3>
+
+                        <p class="precio">
+                            $59.99
+                        </p>
+
+                        <button>
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <aside id="carrito">
+        <div class="cabecera-carrito">
+            <h2>
+                Carrito
+            </h2>
+
+            <button>
+                ✖
+            </button>
+        </div>
+
+        <div class="productos-carrito">
+            <p>
+                Tu carrito está vacío.
+            </p>
+        </div>
+
+        <div class="total">
+            <h3>Total</h3>
+
+            <p>$0.00</p>
+        </div>
+    </aside>
+
+
+    <section id="perfil">
+        <div class="perfil-contenido">
+            <h2>Mi Perfil</h2>
+
+            <p><strong>Nombre:</strong> John Doe</p>
+
+            <p><strong>Usuario:</strong> johnd</p>
+
+            <p><strong>Email:</strong> johnd@example.com</p>
+
+            <p><strong>Teléfono:</strong> 1-570-236-7033</p>
+
+            <button id="cerrarSesion">
+                Cerrar sesión
+            </button>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>
+            © 2026 Minimal Store.
+            Todos los derechos reservados.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
