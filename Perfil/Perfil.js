@@ -3,7 +3,7 @@ const token = localStorage.getItem("authToken");
 const usuario = JSON.parse(localStorage.getItem("usuarioActual"));
 
 if (!token || !usuario) {
-    window.location.href = "../Login/index.html";
+    window.location.href = "../LoginUser/index.html";
 }
 
 // Elementos del HTML

@@ -61,77 +61,39 @@
         <section id="productos">
             <h2>Productos</h2>
 
-            <div class="contenedor-productos">
+            <!-- mensaje que se muestra mientras se cargan los productos -->
+            <p id="mensajeProductos">
+                Cargando productos...
+            </p>
 
-                <article class="card">
-                    <img src="https://placehold.co/300x300" alt="Producto">
+            <!-- Aca js agregará las tarjetas -->
+            <div class="contenedor-productos" id="contenedorProductos">
 
-                    <div class="info">
-                        <span class="categoria">
-                            Electrónica
-                        </span>
-
-                        <h3>
-                            Nombre del producto
-                        </h3>
-
-                        <p class="precio">
-                            $109.99
-                        </p>
-
-                        <button>
-                            Agregar al carrito
-                        </button>
-                    </div>
-                </article>
-
-
-                <article class="card">
-                    <img src="https://placehold.co/300x300" alt="Producto">
-
-                    <div class="info">
-                        <span class="categoria">
-                            Ropa
-                        </span>
-
-                        <h3>
-                            Nombre del producto
-                        </h3>
-
-                        <p class="precio">
-                            $59.99
-                        </p>
-
-                        <button>
-                            Agregar al carrito
-                        </button>
-                    </div>
-                </article>
             </div>
         </section>
     </main>
 
     <aside id="carrito">
         <div class="cabecera-carrito">
-            <h2>
-                Carrito
-            </h2>
+            <h2>Carrito</h2>
 
-            <button>
+            <button id="cerrarCarrito">
                 ✖
             </button>
         </div>
 
-        <div class="productos-carrito">
-            <p>
+        <!-- js agregará los productos -->
+        <div class="productos-carrito" id="productosCarrito">
+            <p id="mensajeCarrito">
                 Tu carrito está vacío.
             </p>
         </div>
 
         <div class="total">
             <h3>Total</h3>
-
-            <p>$0.00</p>
+            <p id="precioTotal">
+                $0.00
+            </p>
         </div>
     </aside>
 
@@ -143,7 +105,7 @@
         </p>
     </footer>
 
-    <script src="principal.js"></script>
+    <script src="Principal.js"></script>
 
 </body>
 
