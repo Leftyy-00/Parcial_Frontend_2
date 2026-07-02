@@ -125,7 +125,7 @@ button {
     margin-top: 30px;
     padding: 15px;
     width: 220px;
-    border: none;
+    border: solid 1px #000000;
     border-radius: 10px;
     background: #fffdfd;
     color: rgb(0, 0, 0);
