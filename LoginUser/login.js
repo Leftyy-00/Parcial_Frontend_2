@@ -1,5 +1,4 @@
-// login.js
-// Login contra Fake Store API + guardado de sesión en localStorage
+// Login Fake Store API + guardado de sesión en localStorage
 
 const loginForm = document.getElementById('loginForm');
 const mensajeLogin = document.getElementById('mensajeLogin');
@@ -38,11 +37,12 @@ loginForm.addEventListener('submit', async (event) => {
         const loginData = await loginResponse.json();
         const token = loginData.token;
 
-        // 2. Trae los datos del usuario de prueba (id 1 = johnd)
+        // 2. Trae los datos del usuario de prueba
         const userResponse = await fetch('https://fakestoreapi.com/users/1');
 
         if (!userResponse.ok) {
-            throw new Error('No se pudieron obtener los datos del usuario.');
+            mensajeLogin.textContent = 'No se pudieron obtener los datos del usuario.';
+            return;
         }
 
         const usuario = await userResponse.json();
@@ -52,11 +52,7 @@ loginForm.addEventListener('submit', async (event) => {
         localStorage.setItem('usuarioActual', JSON.stringify(usuario));
 
         // 4. Redirige al catálogo
-        mensajeLogin.style.color = 'green';
-        mensajeLogin.textContent = 'Sesión iniciada. Redirigiendo...';
-        setTimeout(() => {
-            window.location.href = '../PaginaPrincipal/index.html';
-        }, 600);
+        window.location.href = '../PaginaPrincipal/index.html';
 
     } catch (error) {
         console.error(error);
