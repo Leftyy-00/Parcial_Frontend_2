@@ -66,22 +66,18 @@ main {
 /* ==========================
         FOTO
 ========================== */
-.foto {
-    width: 300px;
-    background: #fafafa;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-    border-right: 1px solid #eee;
-}
 
-.foto img {
+.avatar-perfil {
+    margin-top: 20px;
+    margin-left: 20px;
     width: 170px;
     height: 170px;
     border-radius: 50%;
-    object-fit: cover;
-    background: #ddd;
+    background: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
 }
 
 /* ==========================

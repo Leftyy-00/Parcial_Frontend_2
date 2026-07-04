@@ -23,5 +23,7 @@ telefono.textContent = usuario.phone;
 cerrarSesion.addEventListener("click", () => {
     localStorage.removeItem("authToken");
     localStorage.removeItem("usuarioActual");
-    window.location.href = "/Parcial_Frontend_2/LoginUser/index.html";
+    localStorage.removeItem("carrito");
+    
+    window.location.href = "../LoginUser/index.html";
 });
