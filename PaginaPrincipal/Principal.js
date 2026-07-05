@@ -182,7 +182,6 @@ function crearTarjetaProducto(producto) {
     tarjeta.appendChild(info);
 
     return tarjeta;
-
 }
 
 /**

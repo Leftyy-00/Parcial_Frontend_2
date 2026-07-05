@@ -140,3 +140,10 @@ button:hover {
         width: 100%;
     }
 }
+
+/*footer*/
+footer {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
