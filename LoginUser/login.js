@@ -1,4 +1,3 @@
-// Login Fake Store API + guardado de sesión en localStorage
 const loginForm = document.getElementById('loginForm');
 const mensajeLogin = document.getElementById('mensajeLogin');
 

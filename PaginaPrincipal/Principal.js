@@ -128,11 +128,7 @@ function actualizarProductos() {
 
 // RENDERIZADO
 
-/**
- * Crea la tarjeta HTML correspondiente a un producto.
- * @param {Object} producto
- * @returns {HTMLElement}
- */
+// Crea la tarjeta HTML correspondiente a un producto
 function crearTarjetaProducto(producto) {
 
     // Tarjeta principal
@@ -185,10 +181,7 @@ function crearTarjetaProducto(producto) {
 
 }
 
-/**
- * Muestra dinámicamente todos los productos.
- * @param {Array} listaProductos
- */
+// Muestra dinámicamente todos los productos
 function renderizarProductos(listaProductos) {
 
     // Limpia el contenedor.
@@ -216,8 +209,7 @@ function renderizarProductos(listaProductos) {
 
 /**
  * Agrega un producto al carrito.
- * Si el producto ya existe, aumenta su cantidad.
- * @param {number} idProducto
+ * Si el producto ya existe, aumenta su cantidad
  */
 function agregarAlCarrito(idProducto) {
 
