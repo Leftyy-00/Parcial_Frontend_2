@@ -128,12 +128,7 @@ function actualizarProductos() {
 
 // RENDERIZADO
 
-<<<<<<< HEAD
 // Crea la tarjeta HTML correspondiente a un producto
-=======
-/**
- * Crea la tarjeta HTML correspondiente a un producto.*/
->>>>>>> 1a9baaf8f62c296318d90117496f696fb2d769c4
 function crearTarjetaProducto(producto) {
 
     // Tarjeta principal
@@ -185,12 +180,7 @@ function crearTarjetaProducto(producto) {
     return tarjeta;
 }
 
-<<<<<<< HEAD
 // Muestra dinámicamente todos los productos
-=======
-/**
- * Muestra dinámicamente todos los productos.*/
->>>>>>> 1a9baaf8f62c296318d90117496f696fb2d769c4
 function renderizarProductos(listaProductos) {
 
     // Limpia el contenedor.
@@ -218,12 +208,8 @@ function renderizarProductos(listaProductos) {
 
 /**
  * Agrega un producto al carrito.
-<<<<<<< HEAD
  * Si el producto ya existe, aumenta su cantidad
  */
-=======
- * Si el producto ya existe, aumenta su cantidad.*/
->>>>>>> 1a9baaf8f62c296318d90117496f696fb2d769c4
 function agregarAlCarrito(idProducto) {
 
     // Busca el producto completo
